@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FoodAnalyticsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/brown"
+    android:padding="16dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <!-- Título de la interfaz -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Analytics"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#333333" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <!-- Primera gráfica: Comida consumida por hora -->
+    <TextView
+        android:id="@+id/graphfood1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food eated per hour (Today)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/graphfood1_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/light_orange"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp">
+        <!-- Aquí se integrará la gráfica en tiempo de ejecución -->
+    </FrameLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
+    <!-- Segunda gráfica: Veces activado por día -->
+    <TextView
+        android:id="@+id/graphfood2_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activation amount per day (Last Week)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/graphfood2_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/light_orange"
+        android:elevation="4dp"
+        android:padding="8dp">
+        <!-- Aquí se integrará la gráfica en tiempo de ejecución -->
+    </FrameLayout>
+
+</LinearLayout>

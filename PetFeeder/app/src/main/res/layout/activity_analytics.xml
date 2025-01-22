@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnalyticsActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/food_analytics"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:text="Food Analytics"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/light_orange"
+            android:textColor="@color/brown"
+            android:gravity="center"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/water_analytics"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="56dp"
+            android:text="Water analytics"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/light_blue"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_700"
+        android:elevation="0dp"
+        app:itemIconSize="23dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@drawable/text_selector"
+        app:itemRippleColor="@color/orange"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>
