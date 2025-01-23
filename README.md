@@ -6,13 +6,13 @@ This project is an automatic feeder designed to facilitate the feeding and care 
  ![1](https://github.com/inesperez03/Automatic-Pet-Feeder/blob/main/images/1.png?raw=true)
 
 ## 💾 Hardware
-- Microcontrolador: Arduino Uno
-- Modulo bluetooth: Bluetooth HC-05
-- Sensores:
-  - HC-SR04: Monitorización del nivel de agua.
-  - Celda de carga (HX711): Peso de comida dispensada.
-- Actuadores:
-  - Bomba agua
+- Microcontroller: Arduino Uno
+- Bluetooth module: Bluetooth HC-05
+- Sensors:
+  - HC-SR04: Water level
+  - Load cell (HX711): Weight of dispensed food.
+- Actuators:
+  - Water pump.
   - Servomotor
  
   ![2](https://github.com/inesperez03/Automatic-Pet-Feeder/blob/main/images/2.png?raw=true)
