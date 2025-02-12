@@ -28,7 +28,7 @@ This project is an automatic feeder designed to facilitate the feeding and care 
 String message types:
 - Sent by the android application:
   - “w”: add extra water
-  - f": add extra food
+  - "f": add extra food
   - “c, dailyfood, dailywater, autorefill”: indicates the daily target for each animal and if the autorefill option is enabled.
 - Sent by arduino:
   - water_sensor: current amount of water
